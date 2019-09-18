@@ -15,8 +15,8 @@ body {
     "header header header"
     'menu main1 right'
     'footer footer footer'; 
-    grid-template-rows: 75px auto 50px;
-    grid-template-columns: 240px auto 300px;
+    grid-template-rows:90px auto 50px;
+     grid-template-columns:400px auto 300px;
         min-height: 100vh;
     position: relative;
 
@@ -40,7 +40,7 @@ body {
 .my-menu a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    
 }
 .my-menu ul {
    
@@ -73,7 +73,7 @@ body {
   }
   .main-hex-p {
     margin-top: 20px;
-    padding-top: 40px; 
+    padding: 40px; 
   }
   .my-right a{
     text-decoration: none;
@@ -96,6 +96,9 @@ body {
     margin: 10px;
  }
  
+ .btn-wrapper{
+  padding :10px;
+}
 
  .button-link {
      background-color: rgb(235, 178, 72); 
