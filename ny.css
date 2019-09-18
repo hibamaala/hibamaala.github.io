@@ -1,0 +1,215 @@
+*{
+     box-sizing:border-box;
+}
+
+
+
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+    background-image: url("images/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+
+ }
+
+ 
+ /*startsida*/
+ .grid-container{
+     display: grid;
+     min-height: 100vh;
+     grid-template-rows:90px auto 50px;
+     grid-template-columns:400px auto 450px;
+     grid-template-areas:
+     "header header header"
+    'menu    main   right '
+    'footer footer footer ';
+
+
+ }
+ 
+ .pa-header{
+ 
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #9933cc;
+    color:white;
+  
+    
+ 
+ }
+ 
+ .pa-menu{
+     grid-area: menu;
+     margin-right: 30px;
+
+ }
+ 
+ 
+ .pa-menu ul {
+
+    list-style-type: none;
+    text-align: center;
+
+
+     
+      
+   }
+ 
+ .pa-menu li {
+     padding: 5px 10px;  
+     margin-bottom: 7px;
+     background-color: #fc1111;
+    
+     
+   }
+
+.pa-menu a {
+    color: white;
+     text-decoration: none;
+   
+}
+ 
+ .pa-menu a:hover{
+       background-color:white;
+       color: black;
+     
+ }
+   
+ .pa-main h1{
+     text-align: center;
+ }
+ 
+
+ .pa-main{
+     grid-area:main;
+     margin: 40px;
+     text-align: justify;
+ 
+ }
+ .use-image{
+ padding-top: 100px;
+     
+ }
+
+
+ .use-text{
+     padding-top: 100px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-style: italic;  
+     font-size:25px;
+     color: teal;
+ }
+ 
+
+ .startsida-picture{
+     width: 100%;
+     height: auto;
+ 
+ }
+ 
+ .pa-right{
+    
+     grid-area: right;
+     text-align: center;
+     margin: 40px;
+       
+ }
+
+
+ .pa-right a{
+  text-decoration: none;
+  text-align: center;
+}
+
+.pa-right a:hover {
+  text-decoration: none;
+  color: red;
+  text-align: center;
+}
+
+.pa-right a:active  {
+  text-decoration: none;
+  color:green;
+  text-align: center;
+}
+
+.HSL-bild{
+    width: 100%;
+    height: auto;
+}
+ 
+ .pa-footer{
+     grid-area: footer;
+     display: flex;
+     text-align: center;
+     background-color:green;
+     color: #ffffff;
+     justify-content: center;
+     align-items: center;
+     font-size: 10px;
+
+ }
+ 
+ 
+
+ /*values sida*/
+ .HSL-bild{
+     width: 100%;
+     height: auto;
+ }
+
+ .exempel-bild{
+    width: 100%;
+    height: auto;
+}
+
+.pa-right ul{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight:bold;
+}
+
+
+
+
+
+
+
+/* för enheter som är under 768px;*/
+
+
+ 
+ @media screen and (max-width: 769px){
+         
+         .grid-container{
+           grid-template-rows: auto;
+           grid-template-columns: auto;
+           grid-template-areas: 
+             "header"
+             "menu"
+             "main"
+             "right"
+             "footer"
+        
+            
+         }
+    
+        }
+     
+         
+
+ /* för anheter som är 1024px;*/
+
+ @media screen and (width: 1024px){
+    
+  .grid-container{
+       grid-template-rows:100px auto 100px;
+       grid-template-columns: 240px auto 240px;
+  }
+
+  
+ }
