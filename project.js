@@ -16,8 +16,8 @@ function change_pic() {
         imgObj.src = "images/2.png";
     }
     else { imgObj.src = "images/10.jpg"; }
+    imgObj.style.width = "100%";
+    imgObj.style.height = "auto";
 }
 
 
-meis_pic.style.width = "100%";
-meis_pic.style.height = "auto";
